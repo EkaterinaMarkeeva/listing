@@ -7,7 +7,7 @@ type ListingProps = { items: ItemType[] };
 export const Listing: FC<ListingProps> = ({items}) => {
   return (
     <div className="item-list">
-      {items.filter(item => item.state !== 'removed').map((item) => {
+      {items.map((item) => {
         return <Item data={item} key={item.listing_id} />
       })}
     </div>

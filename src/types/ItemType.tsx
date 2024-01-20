@@ -7,6 +7,5 @@ export type ItemType = {
   title: string,
   currency_code: string,
   price: string,
-  quantity: number,
-  state: string
+  quantity: number
 }
